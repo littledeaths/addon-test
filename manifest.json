@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+	"name": "cool addon",
+	"description": "this is a cool addon, right?",
+	"version": "1.0",
+	"icons":{
+		"48":"icons/icon-48.jpg"
+	},
+
+	"applications": {
+		"gecko":{
+			"id": "borderify@mozilla.org",
+			"strict_min_version": "45.0"
+		}
+	},
+
+	"content_scripts":[
+	{
+		"matches": ["*://*.mozilla.org/*"],
+		"js": ["dontbeevil.js"]
+
+		}
+	]
+}
